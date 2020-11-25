@@ -1,0 +1,163 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+.cases{
+	border-radius: 5px;
+}
+#first_div{
+	transition: background-color 0.15s ease-in-out;
+}
+
+#first_div:hover{
+	background-color: rgba(255, 7, 58, 0.125);
+}
+
+#second_div{
+	transition: background-color 0.15s ease-in-out;
+}
+
+#second_div:hover{
+	background-color: rgba(0, 123, 255, 0.125);
+}
+
+#third_div{
+	transition: background-color 0.15s ease-in-out;
+}
+
+#third_div:hover{
+	background-color: rgba(40, 167, 69, 0.125);
+}
+
+#fourth_div{
+	transition: background-color 0.15s ease-in-out;
+}
+
+#fourth_div:hover{
+	background-color: rgba(108, 117, 125, 0.125);
+}
+
+#con{
+	margin: 20px 0 0 0;
+	font-size: 13px;
+	font-weight: 600;
+	color: #e23028;
+	letter-spacing: 0.5px;
+}
+
+#numspan{
+	margin: 10px 0px;
+	color: rgba(255, 7, 58, 0.7);
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+#total{
+	margin: 10px 0px;
+	color: #e23028;
+	font-size: 24px;
+	font-weight: 900;
+	letter-spacing: 0.5px;
+}
+
+#con2{
+	margin: 20px 0 0 0;
+	font-size: 13px;
+	font-weight: 600;
+	color: #007bff;
+	letter-spacing: 0.5px;
+}
+
+#total2{
+	margin: 38px 0px;
+	color: #007bff;
+	font-size: 24px;
+	font-weight: 900;
+	letter-spacing: 0.5px;
+}
+
+#con3{
+	margin: 20px 0 0 0;
+	font-size: 13px;
+	font-weight: 600;
+	color: #28a745;
+	letter-spacing: 0.5px;
+}
+
+#numspan_recover{
+	margin: 10px 0px;
+	color: rgba(40, 167, 69, 0.7);
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+
+#total3{
+	margin: 10px 0px;
+	color: #28a745;
+	font-size: 24px;
+	font-weight: 900;
+	letter-spacing: 0.5px;
+}
+
+#con4{
+	margin: 20px 0 0 0;
+	font-size: 13px;
+	font-weight: 600;
+	color: #6c757d;
+	letter-spacing: 0.5px;
+}
+
+#numspan_death{
+	margin: 10px 0px;
+	color: rgba(108,117,125,.7);
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+
+#total4{
+	margin: 10px 0px;
+	color: #6c757d;
+	font-size: 24px;
+	font-weight: 900;
+	letter-spacing: 0.5px;
+}
+
+#table-body tr td{
+	font-weight: 400;
+}
+
+canvas{
+	padding: 20px 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+#nav-icon{
+	font-size: 15px;
+}
+div h4, #total, #total2, #total3,#total4{
+	font-size: 25px;
+}
+#con,#con2,#con3,#con4{
+	font-size: 13px;
+}
+#numspan, #numspan_recover, #numspan_death{
+	font-size: 13px;
+}
+table{
+	font-size: 15px;
+}
+}
+
+@media only screen and (max-width: 990px){
+table{
+	font-size: 13px;
+}
+canvas{
+	padding: 10px 10px;
+}
+}
