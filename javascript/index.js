@@ -114,16 +114,31 @@ function pieChart(remove_state) {
       fontColor: "#000",
     },
     scales: {
+    	xAxes: [
+        {
+          ticks: {
+            display: false,
+          },
+          gridLines: {
+            display: false,
+            drawBorder: false
+          },
+        },
+      ],
       yAxes: [
         {
           ticks: {
-            min: 0,
+            display: false,
+          },
+          gridLines: {
+            display: false,
+            drawBorder: false
           },
         },
       ],
     },
     legend: {
-      display: true,
+      display: false,
       position: "bottom",
     },
   };
@@ -203,23 +218,25 @@ function Line(case_time) {
           },
           gridLines: {
             display: false,
+            drawBorder:false
           },
         },
       ],
       yAxes: [
         {
           ticks: {
-            display: true,
+            display: false,
           },
           gridLines: {
-            display: true,
+            display: false,
+            drawBorder:false
           },
         },
       ],
     },
     legend: {
-      display: true,
-      position: "bottom",
+      display: false,
+      position: "top",
     },
   };
   var chart = new Chart(ctx, {
