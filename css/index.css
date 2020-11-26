@@ -134,30 +134,3 @@
 canvas{
 	padding: 20px 30px;
 }
-
-@media only screen and (max-width: 1200px) {
-#nav-icon{
-	font-size: 15px;
-}
-div h4, #total, #total2, #total3,#total4{
-	font-size: 25px;
-}
-#con,#con2,#con3,#con4{
-	font-size: 13px;
-}
-#numspan, #numspan_recover, #numspan_death{
-	font-size: 13px;
-}
-table{
-	font-size: 15px;
-}
-}
-
-@media only screen and (max-width: 990px){
-table{
-	font-size: 13px;
-}
-canvas{
-	padding: 10px 10px;
-}
-}

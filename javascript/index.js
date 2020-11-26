@@ -25,32 +25,25 @@ fetch(url)
 // })
 
 function ShowData(remove_state) {
-  console.log(remove_state);
-  if (remove_state["deltaconfirmed"] > 0) {
   	document.getElementById("numspan").innerHTML = `+${formatNumber(
     remove_state["deltaconfirmed"]
   	)}`;
   	document.getElementById("total").innerHTML = `${formatNumber(
     remove_state["confirmed"]
   )}`;
-  }
 
-  if (remove_state["deltarecovered"] > 0) {
   	document.getElementById("numspan_recover").innerHTML = `+${formatNumber(
     remove_state["deltarecovered"]
   	)}`;
   	document.getElementById("total3").innerHTML = `${formatNumber(
     remove_state["recovered"]
   )}`;
-  }
-  if (remove_state["deltadeaths"] > 0) {
   	document.getElementById("numspan_death").innerHTML = `+${formatNumber(
     remove_state["deltadeaths"]
   )}`;
   	document.getElementById("total4").innerHTML = `${formatNumber(
     remove_state["deaths"]
   )}`;
-  }
   document.getElementById("total2").innerHTML = `${formatNumber(
     remove_state["active"]
   )}`;
@@ -90,54 +83,6 @@ function getData(states) {
   });
   table_body.innerHTML = html;
 }
-
-// function chart(states){
-// 	let arr = [];
-// 	let arrstate = [];
-// 	states.forEach(function(element){
-// 		arr.push(element["confirmed"]);
-// 		arrstate.push(element["state"]);
-// 	})
-
-// 	var ctx = document.getElementById('myChart').getContext('2d');
-// 	var data = {
-// 		labels: arrstate,
-//         datasets: [{
-//             label: 'State-Wise Cases',
-//             data: arr,
-//             backgroundColor: '#ff3838',
-//             borderColor: 'rgb(255, 99, 132)',
-//             borderWidth: 1
-//         }]
-// 	};
-
-// 	var option = {
-// 		title:{
-// 			display: true,
-// 			position: "top",
-// 			text: "Bar Graph",
-// 			fontSize: 18,
-// 			fontColor: "#000"
-// 		},
-// 		scales:{
-// 			yAxes: [{
-// 				ticks: {
-// 					min: 0
-// 				}
-// 			}]
-// 		}
-// 	};
-// 	var chart = new Chart(ctx, {
-//     // The type of chart we want to create
-//     type: 'bar',
-
-//     // The data for our dataset
-//     data: data,
-
-//     // Configuration options go here
-//     options: option
-// });
-// };
 
 function pieChart(remove_state) {
   var ctx = document.getElementById("pieChart").getContext("2d");
